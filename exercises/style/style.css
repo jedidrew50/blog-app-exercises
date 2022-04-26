@@ -90,6 +90,7 @@ footer {
 
 .post {
     display: flex;
+    background-color: white;
     border: 1px solid #eaecee;
     border-radius: 8px;
     min-height: 200px;
@@ -142,6 +143,15 @@ footer {
     overflow: hidden;
 }
 
+.nav-button {
+    background: #e85757;
+
+}
+
+.new-post-button {
+
+}
+
 button {
     margin-top: 10px;
     background: #e85757;
@@ -154,6 +164,11 @@ button {
     padding: 8px;
     width: 120px;
     color: #fff;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
 }
 
 /* Style all font awesome icons */
@@ -190,5 +205,9 @@ button {
         background: #0077B5;
         color: white;
       }
-
+   /* github */
+   .fa-github {
+    background: #6cc644;
+    color: white;
+  }
 
