@@ -1,0 +1,194 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.post-link {
+    text-decoration: none;
+}
+
+
+header {
+    min-height: 300px;
+    background-color: rgb(14, 166, 231);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../assets/banner.jpeg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+header > * {
+    z-index: 10;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+}
+
+.profile-image {
+    width: 100px;
+    height: 100px;
+    margin: 3px;
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid rgb(248, 244, 244);
+    background-image: url("../assets/profile.jpg");
+    background-size: cover;
+}
+
+.profile-name {
+    font-size: 3em;
+    font-weight: bold;
+
+}
+
+.social-links {
+    
+    align-items: space-between;
+}
+
+.subtext {
+    margin-top: 8px;
+}
+
+.main {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    max-width: 750px;
+    min-width: 600px;
+    width: 100%;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+
+footer {
+    min-height: 100px;
+    background-color: #eaecee70;
+    color: #929eaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.post {
+    display: flex;
+    border: 1px solid #eaecee;
+    border-radius: 8px;
+    min-height: 200px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    
+}
+
+.post:hover {
+    transform: translate3d(0, -5px, 0);
+    box-shadow: 0 1rem 5rem 0 rgba(0,0,0,.1);
+}
+
+.post-image {
+    flex-basis: 40%;
+    background-image: url("../assets/photo.jpg");
+    background-size: cover;
+    background-position: center;
+
+}
+
+.post-content {
+    flex-basis: 60%;
+    padding: 24px;
+    
+}
+
+.post-date {
+    font-size: 12px;
+    color: #adb5bd;
+    
+}
+
+.post-title {
+    margin-top: 16px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    
+}
+
+.post-text {
+    margin-top: 4px;
+    color: #495057;
+    font-weight: 400;
+    font-size: 1em;
+    line-height: 1.4;
+    max-height: 65px;
+    overflow: hidden;
+}
+
+button {
+    margin-top: 10px;
+    background: #e85757;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 8px;
+    width: 120px;
+    color: #fff;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 15px;
+    font-size: 15px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+    /* Linkedin */
+    .fa-linkedin {
+        background: #0077B5;
+        color: white;
+      }
+
+
